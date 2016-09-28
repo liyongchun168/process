@@ -11,7 +11,7 @@ im2 =  255-im
 im3 =  (100.0/255) * im +100
 im4 = 255.0 * (im/255.0)**2
 
-#print int(im2.min()),int(im2.max())
+print int(im2.min()),int(im2.max())
 
 imshow(im4)
 #print  'Please  click  3  points'
