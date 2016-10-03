@@ -13,6 +13,7 @@ for i in range(0,im.shape[0]):
         im[i,j,1]   =   grey
         im[i,j,2]   =   grey
     
+    
 imshow(im)
 
 show()
