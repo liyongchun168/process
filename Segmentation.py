@@ -13,7 +13,19 @@ for i in range(0,im.shape[0]):
         im[i,j,1]   =   grey
         im[i,j,2]   =   grey
     
-    
+threshold = 100
+
+for i in range(0,im.shape[0]):
+    for j in range(0,im.shape[1]):
+        if im[i,j,0] >= threshold:
+            im[i,j,0] = 255
+            im[i,j,1] = 255
+            im[i,j,2] = 255
+        else:
+            im[i,j,0] = 0
+            im[i,j,1] = 0
+            im[i,j,2] = 0
+
 imshow(im)
 
 show()
